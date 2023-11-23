@@ -1,1 +1,50 @@
-n
+Cahier des charges pour la création d'une API de recettes de produits cosmétiques
+
+1. Introduction
+
+L'objectif de ce projet est de concevoir et développer une API permettant la gestion des recettes de produits cosmétiques. Cette API fournira des fonctionnalités telles que l'ajout, la modification, la suppression d'ingrédients et de recettes, ainsi que la récupération d'informations sur les relations entre les deux.
+**2. Fonctionnalités principales**
+
+**2.3 Gestion des utilisateurs et Authentification**
+- Mise en place d'un système d'authentification basé sur JWT (JSON Web Tokens).
+- Possibilité pour les utilisateurs de s'inscrire, se connecter, gérer leur compte (modification de mot de passe, mise à jour d'informations personnelles, etc.).
+- Actions réservées aux utilisateurs connectés, telles que la création de recettes.
+- Intégration de Stripe pour gérer les abonnements premium.
+
+**2.4 Gestion des abonnements premium**
+- Création d'une catégorie d'utilisateurs premium.
+- Les utilisateurs premium auront des fonctionnalités supplémentaires, par exemple, la possibilité d'ajouter des liens vers les ingrédients de leurs recettes.
+- Intégration de Stripe pour la gestion des abonnements premium.
+
+**3. Relations entre utilisateurs et recettes**
+
+L'API doit permettre de récupérer les informations suivantes :
+- Liste des recettes créées par un utilisateur.
+- Actions spécifiques réservées aux utilisateurs premium.
+
+**4. Gestion des rôles et des permissions**
+
+- Ajout d'au moins un rôle supplémentaire avec des permissions plus élevées (par exemple, un rôle administrateur).
+- Mise en place de commandes Symfony pour effectuer des actions en interne, telles que changer la catégorie d'un utilisateur, donner/enlever un rôle, etc.
+
+**5. Sécurité**
+
+L'API doit assurer la sécurité des données utilisateur et des transactions financières. Les communications avec Stripe doivent être sécurisées et conformes aux meilleures pratiques de l'industrie.
+
+**6. Documentation mise à jour**
+
+La documentation doit être mise à jour pour inclure les nouvelles fonctionnalités liées à la gestion des utilisateurs, des abonnements premium, des rôles et des permissions.
+
+**7. Tests**
+
+Des tests unitaires et d'intégration supplémentaires doivent être mis en place pour garantir le bon fonctionnement des nouvelles fonctionnalités.
+
+**8. Contraintes techniques**
+
+Les technologies utilisées doivent prendre en charge l'authentification JWT, l'intégration avec Stripe, et les fonctionnalités liées à la gestion des utilisateurs et des rôles.
+
+**9. Évolutivité**
+
+L'API doit être conçue pour être extensible afin de prendre en charge de futures fonctionnalités liées à la gestion des utilisateurs et des rôles.
+
+Ces modifications s'ajoutent aux exigences précédentes du cahier des charges et doivent être prises en compte tout au long du processus de développement de l'API de recettes de produits cosmétiques.
